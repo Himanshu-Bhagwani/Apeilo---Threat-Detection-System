@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide - Aegis Threat Detection System
+# 🚀 Quick Start Guide - Apelio Fraud Detection System
 
 ## One-Click Setup & Run
 
@@ -10,12 +10,12 @@ All setup is now **fully automated**! Just run one script and everything will be
 
 ### Option 1: PowerShell (Best)
 ```powershell
-.\start_aegis.ps1
+.\start_apelio.ps1
 ```
 
 ### Option 2: Batch File (Simple)
 ```
-Double-click start_aegis.bat
+Double-click start_apelio.bat
 ```
 
 ---
@@ -23,8 +23,8 @@ Double-click start_aegis.bat
 ## 🍎 Mac / 🐧 Linux
 
 ```bash
-chmod +x start_aegis.sh
-./start_aegis.sh
+chmod +x start_apelio.sh
+./start_apelio.sh
 ```
 
 ---
@@ -33,12 +33,12 @@ chmod +x start_aegis.sh
 
 ### Windows
 ```powershell
-.\stop_aegis.ps1
+.\stop_apelio.ps1
 ```
 
 ### Mac/Linux
 ```bash
-./stop_aegis.sh
+./stop_apelio.sh
 ```
 
 ---
@@ -79,10 +79,10 @@ That's it! The scripts handle everything else.
 
 ### Script won't run?
 - **Windows PowerShell**: Right-click → "Run with PowerShell"
-- **Linux/Mac**: Run `chmod +x start_aegis.sh` first
+- **Linux/Mac**: Run `chmod +x start_apelio.sh` first
 
 ### Port already in use?
-- Run `stop_aegis.ps1` or `stop_aegis.sh` first
+- Run `stop_apelio.ps1` or `stop_apelio.sh` first
 - Or manually kill processes on ports 8000/3000
 
 ### Python/Node not found?
@@ -108,7 +108,7 @@ Once running:
 
 ## 🔑 Test Login
 
-- **Email**: `demo@aegis.com`
+- **Email**: `demo@apelio.com`
 - **Password**: `demo123`
 
 ---

@@ -3,14 +3,14 @@
 ## Current Status
 
 ### ✅ Frontend Protection (FIXED)
-- **AuthGuard Component**: Created `aegis-main/frontend/components/auth-guard.tsx`
-- **Auth Utilities**: Created `aegis-main/frontend/lib/auth.ts`
+- **AuthGuard Component**: Created `apelio-main/frontend/components/auth-guard.tsx`
+- **Auth Utilities**: Created `apelio-main/frontend/lib/auth.ts`
 - **Dashboard Protection**: The `/dashboard` route is now protected via `dashboard/layout.tsx` which wraps content with `<AuthGuard>`
 
 ### ⚠️ Backend API Protection (OPTIONAL)
 - **Status**: Currently, all API endpoints are **UNPROTECTED** (open access)
 - **Reason**: Demo/development setup with mock authentication
-- **Note**: Authentication dependencies are available in `aegis-main/src/api/auth_deps.py` but not applied to routes
+- **Note**: Authentication dependencies are available in `apelio-main/src/api/auth_deps.py` but not applied to routes
 
 ---
 
@@ -37,7 +37,7 @@ Routes wrapped with `<AuthGuard>` will:
 
 ### Option 1: Protect All Detection Endpoints (Recommended for Production)
 
-Edit `aegis-main/src/api/routers/risk.py` (and other routers):
+Edit `apelio-main/src/api/routers/risk.py` (and other routers):
 
 ```python
 from fastapi import Depends
@@ -107,11 +107,11 @@ curl -X POST http://localhost:8000/risk/unified \
 ### Token Format
 - Mock tokens start with `"mock-token-"`
 - Generated during login: `mock-token-{uuid}`
-- Stored in localStorage under key: `aegis.idToken`
+- Stored in localStorage under key: `apelio.idToken`
 
 ### Valid Test Credentials
-- `demo@aegis.com` / `demo123`
-- `admin@aegis.com` / `admin123`
+- `demo@apelio.com` / `demo123`
+- `admin@apelio.com` / `admin123`
 - `test@test.com` / `test123`
 
 ---
@@ -132,11 +132,11 @@ For production deployment:
 ## Files Created
 
 ### Frontend:
-- ✅ `aegis-main/frontend/lib/auth.ts` - Authentication utilities
-- ✅ `aegis-main/frontend/components/auth-guard.tsx` - Route protection component
+- ✅ `apelio-main/frontend/lib/auth.ts` - Authentication utilities
+- ✅ `apelio-main/frontend/components/auth-guard.tsx` - Route protection component
 
 ### Backend:
-- ✅ `aegis-main/src/api/auth_deps.py` - Backend authentication dependencies
+- ✅ `apelio-main/src/api/auth_deps.py` - Backend authentication dependencies
 
 ---
 

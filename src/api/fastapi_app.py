@@ -1,7 +1,7 @@
 """
-Aegis Threat Detection API
+Apelio Fraud Detection API
 
-A unified multi-layer threat detection system that identifies suspicious behavior
+A unified multi-layer fraud detection system that identifies suspicious behavior
 across GPS movement, login patterns, password integrity, and transactional fraud,
 combining them into a single risk score.
 
@@ -38,18 +38,18 @@ class UserCredentials(BaseModel):
 
 # In-memory user store (for demo/testing only)
 MOCK_USERS = {
-    "demo@aegis.com": {"password": "demo123", "uid": "demo-user-001"},
-    "admin@aegis.com": {"password": "admin123", "uid": "admin-user-001"},
+    "demo@apelio.com": {"password": "demo123", "uid": "demo-user-001"},
+    "admin@apelio.com": {"password": "admin123", "uid": "admin-user-001"},
     "test@test.com": {"password": "test123", "uid": "test-user-001"},
 }
 
 # Create FastAPI app
 app = FastAPI(
-    title="Aegis Threat Detection API",
+    title="Apelio Fraud Detection API",
     description="""
-## Multi-Layer Threat Detection System
+## Multi-Layer Fraud Detection System
 
-Aegis provides comprehensive threat detection across multiple vectors:
+Apelio provides comprehensive fraud detection across multiple vectors:
 
 ### 🛰️ GPS Spoofing Detection
 Analyzes GPS trajectories to detect location spoofing using ML models (Isolation Forest, GBM, Autoencoder, CNN-RNN).
@@ -118,7 +118,7 @@ app.include_router(risk_router.router, prefix="/risk", tags=["risk"])
 async def root():
     """Welcome endpoint with API overview."""
     return {
-        "name": "Aegis Threat Detection API",
+        "name": "Apelio Fraud Detection API",
         "version": "1.0.0",
         "status": "operational",
         "timestamp": datetime.utcnow().isoformat(),
@@ -166,14 +166,14 @@ async def login(user: UserCredentials):
     Mock login endpoint for testing.
     
     Pre-configured test accounts:
-    - demo@aegis.com / demo123
-    - admin@aegis.com / admin123
+    - demo@apelio.com / demo123
+    - admin@apelio.com / admin123
     - test@test.com / test123
     
     Or signup to create your own!
     """
     if user.email not in MOCK_USERS:
-        return {"error": "User not found. Try demo@aegis.com / demo123"}
+        return {"error": "User not found. Try demo@apelio.com / demo123"}
     
     stored_user = MOCK_USERS[user.email]
     
@@ -271,7 +271,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 async def startup_event():
     """Initialize models and connections on startup."""
     print("=" * 60)
-    print("🛡️  AEGIS THREAT DETECTION API STARTING")
+    print("🛡️  APELIO FRAUD DETECTION API STARTING")
     print("=" * 60)
     print("Loading detection models...")
     
@@ -293,7 +293,7 @@ async def startup_event():
 @app.on_event("shutdown")
 async def shutdown_event():
     """Cleanup on shutdown."""
-    print("Aegis API shutting down...")
+    print("Apelio API shutting down...")
 
 
 # Run with: uvicorn src.api.fastapi_app:app --reload --host 0.0.0.0 --port 8000

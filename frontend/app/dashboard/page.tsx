@@ -178,8 +178,8 @@ export default function DashboardPage() {
       {/* Hero Section */}
       <header className="dashboard-hero">
         <div>
-          <span className="dashboard-kicker">Aegis Command Center</span>
-          <h1>Unified Threat Detection</h1>
+          <span className="dashboard-kicker">Apelio Command Center</span>
+          <h1>Unified Fraud Detection</h1>
           <p>
             Multi-layer threat intelligence combining GPS spoofing, login anomalies,
             password integrity, and fraud detection into actionable risk scores.

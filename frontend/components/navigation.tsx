@@ -9,7 +9,7 @@ const primaryLinks = [
   { href: "/", label: "Overview" },
   { href: "/#features", label: "Features" },
   { href: "/#how-it-works", label: "How It Works" },
-  { href: "/#why-aegis", label: "Why Aegis" },
+  { href: "/#why-apelio", label: "Why Apelio" },
   { href: "/dashboard", label: "Dashboard" }
 ];
 
@@ -34,7 +34,7 @@ export function Navigation() {
       <div className="app-nav__brand">
         <Link href="/" className="app-nav__logo">
           <span className="app-nav__logo-mark" />
-          <span className="app-nav__logo-text">Aegis</span>
+          <span className="app-nav__logo-text">Apelio</span>
         </Link>
         <span className="app-nav__label">Fraud &amp; Identity Protection</span>
       </div>

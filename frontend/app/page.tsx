@@ -47,7 +47,7 @@ const workflow = [
   },
   {
     title: "Data Monitoring",
-    summary: "Identity telemetry streams into Aegis for breach and anomaly screening."
+    summary: "Identity telemetry streams into Apelio for breach and anomaly screening."
   },
   {
     title: "AI Detection",
@@ -55,7 +55,7 @@ const workflow = [
   },
   {
     title: "Alerts & Recommendations",
-    summary: "Targeted guidance helps resolve incidents faster via the Aegis dashboard."
+    summary: "Targeted guidance helps resolve incidents faster via the Apelio dashboard."
   }
 ];
 
@@ -103,9 +103,9 @@ export default function Home() {
       <section className="landing-hero" id="top">
         <div className="landing-hero-content">
           <span className="landing-eyebrow">Identity Intelligence Platform</span>
-          <h1>Aegis: Intelligent Identity Protection for the Modern World</h1>
+          <h1>Apelio: Intelligent Fraud Detection for the Modern World</h1>
           <p>
-            Protect your digital identity with real-time threat detection,
+            Protect your digital identity with real-time fraud detection,
             privacy-preserving monitoring, and AI-driven fraud alerts — powered by AWS.
           </p>
           <div className="hero-cta-row">
@@ -140,7 +140,7 @@ export default function Home() {
         <header>
           <h2>Stay ahead with intelligent defense</h2>
           <p>
-            Aegis unifies streaming telemetry, AI, and AWS security services to safeguard
+            Apelio unifies streaming telemetry, AI, and AWS security services to safeguard
             every digital identity edge.
           </p>
         </header>
@@ -157,7 +157,7 @@ export default function Home() {
 
       <section className="landing-section landing-section-alt" id="how-it-works">
         <header>
-          <h2>How Aegis orchestrates protection</h2>
+          <h2>How Apelio orchestrates protection</h2>
           <p>
             A pipeline built for security teams and researchers—transparent, powerful, and
             grounded in cloud-native best practices.
@@ -183,9 +183,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="landing-section" id="why-aegis">
+      <section className="landing-section" id="why-apelio">
         <header>
-          <h2>Why Aegis delivers uncompromised protection</h2>
+          <h2>Why Apelio delivers uncompromised protection</h2>
           <p>
             We confront the toughest fraud and identity challenges with automation,
             observability, and privacy-first design.
@@ -205,7 +205,7 @@ export default function Home() {
 
       <section className="landing-section landing-section-alt" id="dashboard">
         <header>
-          <h2>The Aegis command center</h2>
+          <h2>The Apelio command center</h2>
           <p>
             Preview the dashboard experience that turns streaming identity signals into
             actionable intelligence.

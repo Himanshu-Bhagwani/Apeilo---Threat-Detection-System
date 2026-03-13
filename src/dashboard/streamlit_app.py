@@ -1,3 +1,3 @@
 import streamlit as st
-st.title('Aegis Dashboard')
+st.title('Apelio Dashboard')
 st.write('Placeholder dashboard')

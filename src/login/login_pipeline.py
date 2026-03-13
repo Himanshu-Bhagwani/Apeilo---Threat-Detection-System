@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Login anomaly pipeline for Aegis.
+Login anomaly pipeline for Apelio.
 
 Place at: src/login/login_pipeline.py
 

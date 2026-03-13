@@ -53,7 +53,7 @@ def validate_mock_token(token: str) -> dict:
         # Extract user info from token or return default
         return {
             "uid": "demo-user",
-            "email": "demo@aegis.com",
+            "email": "demo@apelio.com",
             "token": token
         }
     

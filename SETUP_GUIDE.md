@@ -1,8 +1,8 @@
-# 🛡️ Aegis Threat Detection System - Setup Guide
+# 🛡️ Apelio Fraud Detection System - Setup Guide
 
 ## Overview
 
-Aegis is a **multi-layer threat detection system** that identifies suspicious behavior across:
+Apelio is a **multi-layer fraud detection system** that identifies suspicious behavior across:
 - 🛰️ **GPS Movement** - Detects location spoofing
 - 🔐 **Login Patterns** - Identifies anomalous authentication
 - 🔑 **Password Integrity** - Assesses password strength and breach risk
@@ -98,8 +98,8 @@ npm run dev
 
 | Email | Password | Description |
 |-------|----------|-------------|
-| `demo@aegis.com` | `demo123` | Demo user account |
-| `admin@aegis.com` | `admin123` | Admin account |
+| `demo@apelio.com` | `demo123` | Demo user account |
+| `admin@apelio.com` | `admin123` | Admin account |
 | `test@test.com` | `test123` | Test account |
 
 Or create your own account via the signup page!

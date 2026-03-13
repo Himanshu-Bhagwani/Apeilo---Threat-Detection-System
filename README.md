@@ -1,15 +1,15 @@
-# 🛡️ Aegis Threat Detection System
+# 🛡️ Apelio Fraud Detection System
 
 <div align="center">
 
-**A Unified Multi-Layer Security Platform**
+**A Unified Multi-Layer Fraud Detection Platform**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-teal.svg)](https://fastapi.tiangolo.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org/)
 
-*A comprehensive threat detection system that combines GPS spoofing detection, login anomaly analysis, password risk assessment, and transaction fraud detection into a unified risk score.*
+*A comprehensive fraud detection system that combines GPS spoofing detection, login anomaly analysis, password risk assessment, and transaction fraud detection into a unified risk score.*
 
 </div>
 
@@ -56,15 +56,15 @@
 **Windows:**
 ```powershell
 # Double-click or run:
-.\start_aegis.bat
+.\start_apelio.bat
 # OR
-.\start_aegis.ps1
+.\start_apelio.ps1
 ```
 
 **Mac/Linux:**
 ```bash
-chmod +x start_aegis.sh
-./start_aegis.sh
+chmod +x start_apelio.sh
+./start_apelio.sh
 ```
 
 That's it! The script automatically:
@@ -84,7 +84,7 @@ Once running:
 
 ### Test Credentials
 
-- **Email**: `demo@aegis.com`
+- **Email**: `demo@apelio.com`
 - **Password**: `demo123`
 
 ---
@@ -173,7 +173,7 @@ If you prefer manual setup:
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd aegis-main
+cd apelio-main
 ```
 
 ### 2. Backend Setup

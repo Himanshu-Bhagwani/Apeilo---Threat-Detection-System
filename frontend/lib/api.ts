@@ -1,7 +1,7 @@
 /**
- * Aegis Threat Detection API Client
+ * Apelio Fraud Detection API Client
  * 
- * Provides typed interfaces for all threat detection endpoints:
+ * Provides typed interfaces for all fraud detection endpoints:
  * - GPS Spoofing Detection
  * - Login Anomaly Detection
  * - Password Risk Assessment

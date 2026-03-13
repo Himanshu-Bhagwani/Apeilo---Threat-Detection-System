@@ -6,8 +6,8 @@ import type { ReactNode } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aegis",
-  description: "Aegis fraud and identity protection portal"
+  title: "Apelio",
+  description: "Apelio fraud and identity protection portal"
 };
 
 export default function RootLayout({

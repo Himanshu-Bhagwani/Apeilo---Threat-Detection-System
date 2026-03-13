@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ============================================================
-# 🛡️ AEGIS THREAT DETECTION SYSTEM - Mac/Linux Startup Script
+# 🛡️ APELIO FRAUD DETECTION SYSTEM - Mac/Linux Startup Script
 # ============================================================
 # Fully Automated Setup - Handles everything from A to Z
-# Usage: chmod +x start_aegis.sh && ./start_aegis.sh
+# Usage: chmod +x start_apelio.sh && ./start_apelio.sh
 # ============================================================
 
 set -e
@@ -26,7 +26,7 @@ cd "$SCRIPT_DIR"
 print_banner() {
     echo ""
     echo -e "${CYAN}============================================================${NC}"
-    echo -e "${CYAN}   🛡️  AEGIS THREAT DETECTION SYSTEM${NC}"
+    echo -e "${CYAN}   🛡️  APELIO FRAUD DETECTION SYSTEM${NC}"
     echo -e "${CYAN}============================================================${NC}"
     echo -e "${WHITE}   Fully Automated Setup & Launch${NC}"
     echo -e "${CYAN}============================================================${NC}"
@@ -180,11 +180,21 @@ if [ -f "requirements.txt" ]; then
     
     # Verify critical packages
     print_info "Verifying critical packages..."
-    python -c "import fastapi, uvicorn, tensorflow, sklearn, pandas, numpy" 2>/dev/null
+    
+    # Test core packages (without TensorFlow which may crash on some systems)
+    python -c "import fastapi, uvicorn, sklearn, pandas, numpy" 2>/dev/null
     if [ $? -eq 0 ]; then
-        print_success "All critical packages verified"
+        print_success "Core packages verified (FastAPI, scikit-learn, pandas, numpy)"
     else
-        print_error "Some packages may be missing"
+        print_error "Some core packages may be missing"
+    fi
+    
+    # Test TensorFlow separately (optional, system works without it)
+    python -c "import tensorflow" 2>/dev/null
+    if [ $? -eq 0 ]; then
+        print_success "TensorFlow available (deep learning models enabled)"
+    else
+        print_warning "TensorFlow not available (will use rule-based fallbacks)"
     fi
 else
     print_error "requirements.txt not found!"
@@ -244,7 +254,7 @@ print_success "Port 3000 ready"
 # ============================================================
 # Step 7: Start Services
 # ============================================================
-print_step "7/7" "Starting Aegis services..."
+print_step "7/7" "Starting Apelio services..."
 
 # Start Backend API
 print_info "Starting Backend API on port 8000..."
@@ -306,7 +316,7 @@ fi
 # ============================================================
 echo ""
 echo -e "${GREEN}============================================================${NC}"
-echo -e "${GREEN}   🎉 AEGIS IS RUNNING!${NC}"
+echo -e "${GREEN}   🎉 APELIO IS RUNNING!${NC}"
 echo -e "${GREEN}============================================================${NC}"
 echo ""
 echo -e "   ${WHITE}🌐 Dashboard:     ${CYAN}http://localhost:3000${NC}"
@@ -314,7 +324,7 @@ echo -e "   ${WHITE}📚 API Docs:      ${CYAN}http://localhost:8000/docs${NC}"
 echo -e "   ${WHITE}💚 Health Check:  ${CYAN}http://localhost:8000/health${NC}"
 echo ""
 echo -e "   ${YELLOW}Test Credentials:${NC}"
-echo -e "   ${GRAY}📧 Email:    demo@aegis.com${NC}"
+echo -e "   ${GRAY}📧 Email:    demo@apelio.com${NC}"
 echo -e "   ${GRAY}🔑 Password: demo123${NC}"
 echo ""
 echo -e "${GREEN}============================================================${NC}"

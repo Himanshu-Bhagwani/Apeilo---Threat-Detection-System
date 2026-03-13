@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Password breach / risk pipeline for Aegis.
+Password breach / risk pipeline for Apelio.
 
 Reads a CSV of passwords, engineers strength features, and trains a classifier
 to predict whether a password is breached/weak (1) or safe (0).

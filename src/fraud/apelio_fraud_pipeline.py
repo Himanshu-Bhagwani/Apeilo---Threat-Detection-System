@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-aegis_fraud_pipeline.py
+apelio_fraud_pipeline.py
 
-End-to-end Fraud Detection pipeline for the Aegis project.
+End-to-end Fraud Detection pipeline for the Apelio project.
 
 Usage:
-  python3 src/fraud/aegis_fraud_pipeline.py --raw-dir data/raw/fraud --out-dir data/processed/fraud --train
-  python3 src/fraud/aegis_fraud_pipeline.py --raw-dir data/raw/fraud --out-dir data/processed/fraud --generate-synthetic --n-synth 3000 --train --smote
+  python3 src/fraud/apelio_fraud_pipeline.py --raw-dir data/raw/fraud --out-dir data/processed/fraud --train
+  python3 src/fraud/apelio_fraud_pipeline.py --raw-dir data/raw/fraud --out-dir data/processed/fraud --generate-synthetic --n-synth 3000 --train --smote
 """
 
 import os
